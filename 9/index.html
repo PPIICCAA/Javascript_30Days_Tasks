@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>9</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p onclick="makegreen()">xBREAKxDOWNx</p>
+        <script>
+            const dogs = [{
+                name: "Snickers",
+                age: 2
+            },
+            {
+                name: "huge",
+                age: 8
+            }];
+
+            function makegreen() {
+                const p = document.querySelector("p");
+                p.style.color = "#BADASS";
+                p.style.fontSize = "50px"
+            }
+            console.log("Hello")
+            console.log("Hello I am a %s string!","🍔")
+            console.log("%c I am some great text","font-size: 50px; background:Red; text-shadow: 10px 10px 0 blue")
+            console.warn("OH NOOO")
+            console.error("Shit!")
+            console.info("Crocodiles eat 3-4 people per year")
+            const p = document.querySelector("p")
+            console.clear()
+            console.log(p)
+            console.dir(p)
+            console.clear()
+
+            dogs.forEach(dog => {
+                console.group(`${dog.name}`)
+                console.log(`This is ${dog.name}`)
+                console.log(`${dog.name} is ${dog.age} years old`)
+                console.log(`${dog.name} is ${dog.age * 7} dog years old`)
+                console.groupEnd(`${dog.name}`)
+            })
+
+            console.count("Wes")
+            console.count("Wes")
+            console.count("Wes")
+            console.count("Wes")
+            console.count("Wes")
+
+            console.table(dogs)
+        </script>
+    </body>
+</html>

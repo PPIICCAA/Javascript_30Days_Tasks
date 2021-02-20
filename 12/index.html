@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>12</title>
+        <meta charset="UTF-8">
+        <script src="https://www.cornify.com/js/cornify.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <script>
+        const press = [];
+        const secretcode = 'wesbos';
+        window.addEventListener('keyup', (e) => {
+            console.log(e.key)
+            press.push(e.key)
+            press.splice(-secretcode.length - 1, press.length - secretcode.length)
+                if(press.join('').includes(secretcode)){
+                    console.log("DING DING")
+                    cornify_add()
+                }
+                console.log(press)
+        })
+        </script>
+    </body>
+</html>

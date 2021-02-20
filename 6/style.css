@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.search-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.name {
+    display:inline-block;
+}
+ul {
+    list-style:none
+}
+h1 {
+    background: chocolate;
+}

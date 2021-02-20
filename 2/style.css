@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.clock-draw {
+    position: relative;
+    width: 40rem;
+    height: 40rem;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-color: black;
+    transform: translateY(-3px);
+}
+
+.clock-draw div {
+    top: 50%;
+    left: 3%;
+    height: 6px;
+    background: black;
+    transform-origin: 100%;
+    position: absolute;
+    width: 300px;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.58, 1);
+}
+.h {
+    transform: rotate(90deg)
+}
+.m {
+    transform: rotate(90deg)
+}
+.s {
+    transform: rotate(90deg)
+}

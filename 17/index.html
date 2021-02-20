@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>18</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <ul id="bands"> </ul>
+        <script>
+            const bands = ["bwddwdw", "awdw", "cdWdw"]
+
+            function strip (bandName){
+                return bandName.remplace(/^(a |the |an )/i, '').trim();
+            }
+            const sortedbands = bands.sort((a,b) => strip(a) > strip(b) ? 1 : -1)
+               
+            document.querySelector("#bands").innerHTML = 
+            sortedbands
+                .map(band => `<li>${band}</li>`)
+                .join("")
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>19</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="photobooth">
+            <div class="controls">
+                <button onclick="takePhoto()"> Take Photo</button>
+                <div class="rgb">
+                    <label for="rmin">Red Min:</label>
+                    <input type="range" min=0 max=225 nam="rmin">
+                    <label for="rmax">Red Max:</label>
+                    <input type="range" min=0 max=225 nam="rmax">
+
+                    <br>
+
+                    <label for="gmin">Green Min:</label>
+                    <input type="range" min=0 max=225 nam="gmin">
+                    <label for="gmax">Green Max:</label>
+                    <input type="range" min=0 max=225 nam="gmax">
+
+                    <br>
+
+                    <label for="bmin">Blue Min:</label>
+                    <input type="range" min=0 max=225 nam="bmin">
+                    <label for="bmax">Blue Max:</label>
+                    <input type="range" min=0 max=225 nam="bmax">
+                </div>
+            </div>
+            <canvas class="photo"></canvas>
+            <video class="player"></video>
+            <div class="strip"></div>
+
+            <audio class="snap" src="https://web.archive.org/web/20191031104315/https://wesbos.com/demos/photobooth/snap.mp3" hidden></audio>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</html>

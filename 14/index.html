@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>13</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            let age = 100
+            let  age2 = age
+            console.log(age2, age);
+            age2 = 200
+            console.log(age2, age) 
+
+            let name = "Wes"
+            let name2 = name
+            console.log(name2, name)
+            name2 = "Wease"
+            console.log(name, name2)
+            console.clear()
+
+            const players = ["Wes", "Sarah", "Rick", "Chatles"]
+            const team = players
+            console.log(players, team)
+            team[3] = "Lux"
+            console.clear()
+
+            const team2 = players.slice()
+            const team3 = [].concat(players)
+            const team4 = [...players]
+            const team5 = Array.from(players)
+
+            const person = {
+                name: "Wes Bos",
+                age: 60
+            };
+
+            const captain = person;
+            captain.number = 70
+
+            const cap2 = Object.assign({}, person, {number: 90, age: 12})
+            console.log(cap2)
+            const  cap3 = {...person}
+
+            const wes = {
+                name: "Wes",
+                age: 100,
+                social: {
+                    twitter: "@weesvos",
+                    facebook: "wesbos.developer"
+                }
+            };
+            console.clear()
+            console.log(wes)
+
+            const dev = Object.assign({}, wes);
+            const deb2 = JSON.parse(JSON.stringify(wes))
+        </script>
+    </body>
+</html>
