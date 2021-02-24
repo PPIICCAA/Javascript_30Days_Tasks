@@ -5,7 +5,7 @@ let text = ""
 function body(){
     for (let i = 1; i <= number; i++){
     text += `
-    <button onclick="location.href='file:///home/abdulha/Escritorio/PROYECTOS/Javascript_30/${i}/index.html'" class="day">${i}</button>
+    <button onclick="location.href='${i}/index.html'" class="day">${i}</button>
     `
     }
 }
